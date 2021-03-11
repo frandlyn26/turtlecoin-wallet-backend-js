@@ -161,6 +161,10 @@ You can view available categories and log levels in the documentation.
 
 ## Changelog
 
+### v6.0.7
+
+* Fix bug when scanning coinbase transactions and not using `/sync/raw`
+
 ### v6.0.6
 
 * Upgrade turtlecoin-utils and other dependencies
