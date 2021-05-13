@@ -25,7 +25,7 @@ import { ValidateParametersTests } from './lib/ValidateParametersTests'
 
 const doPerformanceTests: boolean = process.argv.includes('--do-performance-tests');
 
-const daemonAddress = 'fastpool.xyz';
+const daemonAddress = 'public.turtlenode.net';
 const daemonPort = 11898;
 
 function delay(ms: number): Promise<void> {
