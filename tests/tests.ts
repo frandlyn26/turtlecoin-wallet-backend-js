@@ -25,8 +25,8 @@ import { ValidateParametersTests } from './lib/ValidateParametersTests'
 
 const doPerformanceTests: boolean = process.argv.includes('--do-performance-tests');
 
-const daemonAddress = 'public.turtlenode.net';
-const daemonPort = 11898;
+const daemonAddress = 'trtl.bot.tips';
+const daemonPort = 443;
 
 function delay(ms: number): Promise<void> {
     return new Promise((resolve) => setTimeout(resolve, ms));
