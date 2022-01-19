@@ -28,7 +28,7 @@ function sleep(ms) {
 
     /* Initialise our blockchain cache api. Can use a public node or local node
        with `const daemon = new WB.Daemon('127.0.0.1', 11898);` */
-    const daemon = new WB.Daemon('public.turtlenode.net', 11898);
+    const daemon = new WB.Daemon('127.0.0.1', 4242);
 
     if (response === 'c') {
         const newWallet = await WB.WalletBackend.createWallet(daemon);
@@ -65,7 +65,7 @@ function sleep(ms) {
     } else {
         console.log('Attempting to send a transaction');
 
-        const result = await wallet.sendTransactionBasic('TRTLv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW', 1);
+        const result = await wallet.sendTransactionBasic('P1652y2JmoUc75xrNYutFGiL12ZGi7kQMGFDYaK5BDNXJnufap731vnC7WXHDGqLNrYm3TtjELe4W7Ezbkwa4xHyV7E1jtVScSi2r', 1);
 
         if (result.success) {
             console.log(`Sent transaction, hash ${result.transactionHash}, fee ${WB.prettyPrintAmount(result.fee)}`);
